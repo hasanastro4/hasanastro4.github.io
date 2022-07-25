@@ -42,47 +42,186 @@
 <h2><code class="docutils literal notranslate"><span class="pre">simpthon.body</span></code><a class="headerlink" href="#simpthon-body" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="simpthon.body.Body">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">simpthon.body.</span></span><span class="sig-name descname"><span class="pre">Body</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/body.py#L7-L46"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.body.Body" title="Permalink to this definition">¶</a></dt>
-<dd><p>class representing a body</p>
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">simpthon.body.</span></span><span class="sig-name descname"><span class="pre">Body</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/body.py#L7-L69"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.body.Body" title="Permalink to this definition">¶</a></dt>
+<dd><p>class representing a body/particle</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="simpthon.body.Body.get_mass">
+<span class="sig-name descname"><span class="pre">get_mass</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/body.py#L20-L24"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.body.Body.get_mass" title="Permalink to this definition">¶</a></dt>
+<dd><p>return mass of a body/particle</p>
 </dd></dl>
 
+<dl class="py method">
+<dt class="sig sig-object py" id="simpthon.body.Body.get_pos">
+<span class="sig-name descname"><span class="pre">get_pos</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/body.py#L26-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.body.Body.get_pos" title="Permalink to this definition">¶</a></dt>
+<dd><p>return position of a body/particle</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="simpthon.body.Body.get_vel">
+<span class="sig-name descname"><span class="pre">get_vel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/body.py#L32-L36"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.body.Body.get_vel" title="Permalink to this definition">¶</a></dt>
+<dd><p>return velocity of a body/particle</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="simpthon.body.Body.set_mass">
+<span class="sig-name descname"><span class="pre">set_mass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">m</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/body.py#L38-L42"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.body.Body.set_mass" title="Permalink to this definition">¶</a></dt>
+<dd><p>set mass of a body/particle as m</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="simpthon.body.Body.set_phase_space">
+<span class="sig-name descname"><span class="pre">set_phase_space</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/body.py#L60-L69"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.body.Body.set_phase_space" title="Permalink to this definition">¶</a></dt>
+<dd><p>set phase space of a body/particle as <span class="math notranslate nohighlight">\(\mathbf{x,v}\)</span></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="simpthon.body.Body.set_pos">
+<span class="sig-name descname"><span class="pre">set_pos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/body.py#L44-L50"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.body.Body.set_pos" title="Permalink to this definition">¶</a></dt>
+<dd><p>set position of a body/particle as <span class="math notranslate nohighlight">\(\mathbf{x}\)</span></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="simpthon.body.Body.set_vel">
+<span class="sig-name descname"><span class="pre">set_vel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">v</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/body.py#L52-L58"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.body.Body.set_vel" title="Permalink to this definition">¶</a></dt>
+<dd><p>set velocity of a body/particle as <span class="math notranslate nohighlight">\(\mathbf{v}\)</span></p>
+</dd></dl>
+
+</dd></dl>
+
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <dl class="py class">
 <dt class="sig sig-object py" id="simpthon.body.NBody">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">simpthon.body.</span></span><span class="sig-name descname"><span class="pre">NBody</span></span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/body.py#L77-L93"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.body.NBody" title="Permalink to this definition">¶</a></dt>
-<dd><p>n-body</p>
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">simpthon.body.</span></span><span class="sig-name descname"><span class="pre">NBody</span></span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/body.py#L139-L164"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.body.NBody" title="Permalink to this definition">¶</a></dt>
+<dd><p>class representing a bunch of bodies or particles (N-body)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="simpthon.body.NBody.add">
+<span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/body.py#L147-L152"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.body.NBody.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>append a body to bodies</p>
 </dd></dl>
 
+<dl class="py method">
+<dt class="sig sig-object py" id="simpthon.body.NBody.member">
+<span class="sig-name descname"><span class="pre">member</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/body.py#L154-L158"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.body.NBody.member" title="Permalink to this definition">¶</a></dt>
+<dd><p>return a list of body in bodies</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="simpthon.body.NBody.number">
+<span class="sig-name descname"><span class="pre">number</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/body.py#L160-L164"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.body.NBody.number" title="Permalink to this definition">¶</a></dt>
+<dd><p>return number of bodies</p>
+</dd></dl>
+
+</dd></dl>
+
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <dl class="py function">
 <dt class="sig sig-object py" id="simpthon.body.mass">
-<span class="sig-prename descclassname"><span class="pre">simpthon.body.</span></span><span class="sig-name descname"><span class="pre">mass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/body.py#L49-L50"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.body.mass" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<span class="sig-prename descclassname"><span class="pre">simpthon.body.</span></span><span class="sig-name descname"><span class="pre">mass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/body.py#L72-L82"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.body.mass" title="Permalink to this definition">¶</a></dt>
+<dd><p>mass of a body</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>b</strong> (<em>class Body</em>) – body.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>mass of a body.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
 
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <dl class="py function">
 <dt class="sig sig-object py" id="simpthon.body.pos">
-<span class="sig-prename descclassname"><span class="pre">simpthon.body.</span></span><span class="sig-name descname"><span class="pre">pos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/body.py#L52-L53"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.body.pos" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<span class="sig-prename descclassname"><span class="pre">simpthon.body.</span></span><span class="sig-name descname"><span class="pre">pos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/body.py#L84-L94"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.body.pos" title="Permalink to this definition">¶</a></dt>
+<dd><p>position of a body</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>b</strong> (<em>class Body</em>) – body.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>position of a body.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy array</p>
+</dd>
+</dl>
+</dd></dl>
 
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <dl class="py function">
 <dt class="sig sig-object py" id="simpthon.body.vel">
-<span class="sig-prename descclassname"><span class="pre">simpthon.body.</span></span><span class="sig-name descname"><span class="pre">vel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/body.py#L55-L56"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.body.vel" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<span class="sig-prename descclassname"><span class="pre">simpthon.body.</span></span><span class="sig-name descname"><span class="pre">vel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/body.py#L96-L106"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.body.vel" title="Permalink to this definition">¶</a></dt>
+<dd><p>velocity of a body</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>b</strong> (<em>class Body</em>) – body.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>velocity of a body.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy array</p>
+</dd>
+</dl>
+</dd></dl>
 
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <dl class="py function">
 <dt class="sig sig-object py" id="simpthon.body.angmom">
-<span class="sig-prename descclassname"><span class="pre">simpthon.body.</span></span><span class="sig-name descname"><span class="pre">angmom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/body.py#L58-L65"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.body.angmom" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">simpthon.body.</span></span><span class="sig-name descname"><span class="pre">angmom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/body.py#L108-L121"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.body.angmom" title="Permalink to this definition">¶</a></dt>
 <dd><p>angular momentum per unit mass of body <cite>b</cite></p>
 <div class="math notranslate nohighlight">
 \[\mathbf{L} = \mathbf{r \times v}\]</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>b</strong> (<em>class Body</em>) – body.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>angular momentum per unit mass of a body.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy array</p>
+</dd>
+</dl>
 </dd></dl>
 
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <dl class="py function">
 <dt class="sig sig-object py" id="simpthon.body.kinetic">
-<span class="sig-prename descclassname"><span class="pre">simpthon.body.</span></span><span class="sig-name descname"><span class="pre">kinetic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/body.py#L67-L74"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.body.kinetic" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">simpthon.body.</span></span><span class="sig-name descname"><span class="pre">kinetic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/body.py#L123-L136"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.body.kinetic" title="Permalink to this definition">¶</a></dt>
 <dd><p>kinetic energy per unit mass of body <cite>b</cite></p>
 <div class="math notranslate nohighlight">
 \[K = \frac{1}{2} \mathbf{v} \cdot \mathbf{v}\]</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>b</strong> (<em>class Body</em>) – body.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>kinetic energy per unit mass of a body.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
 </dd></dl>
 
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="simpthon-integrator">
 <h2><code class="docutils literal notranslate"><span class="pre">simpthon.integrator</span></code><a class="headerlink" href="#simpthon-integrator" title="Permalink to this headline">¶</a></h2>
@@ -108,6 +247,9 @@
 
 </dd></dl>
 
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <dl class="py class">
 <dt class="sig sig-object py" id="simpthon.integrator.leapfrog">
 <em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">simpthon.integrator.</span></span><span class="sig-name descname"><span class="pre">leapfrog</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pot</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/integrator.py#L36-L57"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.integrator.leapfrog" title="Permalink to this definition">¶</a></dt>
@@ -115,6 +257,9 @@
 <p>a Kick-Drift-Kick version of leapfrog integrator</p>
 </dd></dl>
 
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <dl class="py class">
 <dt class="sig sig-object py" id="simpthon.integrator.Euler">
 <em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">simpthon.integrator.</span></span><span class="sig-name descname"><span class="pre">Euler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pot</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/integrator.py#L123-L143"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.integrator.Euler" title="Permalink to this definition">¶</a></dt>
@@ -123,6 +268,9 @@
 <p>for <span class="math notranslate nohighlight">\(w(t) = (x(t),v(t))\)</span>.</p>
 </dd></dl>
 
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <dl class="py class">
 <dt class="sig sig-object py" id="simpthon.integrator.RungeKutta4">
 <em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">simpthon.integrator.</span></span><span class="sig-name descname"><span class="pre">RungeKutta4</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pot</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/integrator.py#L60-L87"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.integrator.RungeKutta4" title="Permalink to this definition">¶</a></dt>
@@ -130,6 +278,9 @@
 <p>a Runge-Kutta 4th Order integrator</p>
 </dd></dl>
 
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <dl class="py class">
 <dt class="sig sig-object py" id="simpthon.integrator.Forward4OSymplectic">
 <em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">simpthon.integrator.</span></span><span class="sig-name descname"><span class="pre">Forward4OSymplectic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pot</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/integrator.py#L90-L120"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.integrator.Forward4OSymplectic" title="Permalink to this definition">¶</a></dt>
@@ -137,6 +288,9 @@
 <p>a Forward 4th Order Symplectic Integrator (Chin &amp; Chen, 2005)</p>
 </dd></dl>
 
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="simpthon-potential">
 <h2><code class="docutils literal notranslate"><span class="pre">simpthon.potential</span></code><a class="headerlink" href="#simpthon-potential" title="Permalink to this headline">¶</a></h2>
@@ -172,6 +326,9 @@
 
 </dd></dl>
 
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <dl class="py class">
 <dt class="sig sig-object py" id="simpthon.potential.potentials">
 <em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">simpthon.potential.</span></span><span class="sig-name descname"><span class="pre">potentials</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pots</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/potential.py#L161-L193"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.potential.potentials" title="Permalink to this definition">¶</a></dt>
@@ -181,6 +338,9 @@
 \[\Phi (x) = \Sigma_i \Phi_i (x).\]</div>
 </dd></dl>
 
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <dl class="py class">
 <dt class="sig sig-object py" id="simpthon.potential.osilator">
 <em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">simpthon.potential.</span></span><span class="sig-name descname"><span class="pre">osilator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">k</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/potential.py#L51-L77"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.potential.osilator" title="Permalink to this definition">¶</a></dt>
@@ -190,6 +350,9 @@
 \[\Phi (x) = \frac{1}{2} k x^2.\]</div>
 </dd></dl>
 
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <dl class="py class">
 <dt class="sig sig-object py" id="simpthon.potential.pointmass">
 <em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">simpthon.potential.</span></span><span class="sig-name descname"><span class="pre">pointmass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">GM</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/potential.py#L79-L106"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.potential.pointmass" title="Permalink to this definition">¶</a></dt>
@@ -199,6 +362,9 @@
 \[\Phi (x) = -\frac{GM}{r}.\]</div>
 </dd></dl>
 
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <dl class="py class">
 <dt class="sig sig-object py" id="simpthon.potential.plummer">
 <em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">simpthon.potential.</span></span><span class="sig-name descname"><span class="pre">plummer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">GM</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/potential.py#L108-L131"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.potential.plummer" title="Permalink to this definition">¶</a></dt>
@@ -209,6 +375,9 @@
 <p>with <span class="math notranslate nohighlight">\(b\)</span> scale factor.</p>
 </dd></dl>
 
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <dl class="py class">
 <dt class="sig sig-object py" id="simpthon.potential.jaffe">
 <em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">simpthon.potential.</span></span><span class="sig-name descname"><span class="pre">jaffe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">GM</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/potential.py#L133-L158"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.potential.jaffe" title="Permalink to this definition">¶</a></dt>
@@ -219,12 +388,18 @@
 <p>with <span class="math notranslate nohighlight">\(b\)</span> scale factor.</p>
 </dd></dl>
 
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <dl class="py class">
 <dt class="sig sig-object py" id="simpthon.potential.cluster_potential">
 <em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">simpthon.potential.</span></span><span class="sig-name descname"><span class="pre">cluster_potential</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">array([0,</span> <span class="pre">0,</span> <span class="pre">0])</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/potential.py#L196-L211"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.potential.cluster_potential" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#simpthon.potential.potential" title="simpthon.potential.potential"><code class="xref py py-class docutils literal notranslate"><span class="pre">simpthon.potential.potential</span></code></a></p>
 </dd></dl>
 
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="simpthon-hplot">
 <h2><code class="docutils literal notranslate"><span class="pre">simpthon.hplot</span></code><a class="headerlink" href="#simpthon-hplot" title="Permalink to this headline">¶</a></h2>
@@ -272,6 +447,9 @@
 </div>
 </dd></dl>
 
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <dl class="py function">
 <dt class="sig sig-object py" id="simpthon.hplot.plotf">
 <span class="sig-prename descclassname"><span class="pre">simpthon.hplot.</span></span><span class="sig-name descname"><span class="pre">plotf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">['x',</span> <span class="pre">'f(x)']</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_fontsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'-'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xlim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[0,</span> <span class="pre">0]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ylim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[0,</span> <span class="pre">0]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hide_tick</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hide_tick_label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_fig</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'</span> <span class="pre">'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dpi</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">150</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_xaxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_yaxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remove_axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'</span> <span class="pre">'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_loc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tight_layout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">func2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'</span> <span class="pre">'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'r-.'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_label2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'</span> <span class="pre">'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">func3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'</span> <span class="pre">'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'g--'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_label3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'</span> <span class="pre">'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">texts</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[[0,</span> <span class="pre">0,</span> <span class="pre">'</span> <span class="pre">']]</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/hasanastro4/simpthon/blob/main/simpthon/hplot.py#L154-L288"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#simpthon.hplot.plotf" title="Permalink to this definition">¶</a></dt>
