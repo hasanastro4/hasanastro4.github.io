@@ -177,6 +177,7 @@ img {
 
 #content {
 	width: 847px;
+	height: 1200px; /* atur di sini untuk tinggi konten  */
 	margin: 0 auto;
 	padding: 30px 35px 0px 35px;
 	background: #FFFFFF no-repeat left bottom;
