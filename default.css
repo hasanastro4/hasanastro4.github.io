@@ -85,7 +85,8 @@ img {
 	width: 917px;
 	height: 85px; /*115*/
 	margin: 0 auto;
-	background: #FFFFFF;
+	/*background: #FFFFFF;*/
+	background: #e1f0ef;
 }
 
 /* Logo */
@@ -167,10 +168,10 @@ img {
 
 #splash {
 	width: 877px;
-	height: 130px; 
+	height: 130px;
 	margin: 0 auto;
-	border-right: 20px solid #FFFFFF;
-	border-left: 20px solid #FFFFFF;
+	border-right: 20px solid #e1f0ef;;
+	border-left: 20px solid #e1f0ef;;
 }
 
 /* Content */
@@ -180,7 +181,8 @@ img {
 	height: 1200px; /* atur di sini untuk tinggi konten  */
 	margin: 0 auto;
 	padding: 30px 35px 0px 35px;
-	background: #FFFFFF no-repeat left bottom;
+	background: #e1f0ef no-repeat left bottom;
+	/*background: #FFFFFF no-repeat left bottom;*/ /*uncomment this for white bgc*/
 }
 
 #colOne {
@@ -242,7 +244,7 @@ b.pub {
 	font-weight: bold;
 	color: #5D5D5D;
 }
- 
+
 a.pub {
 	font-family: courier;
 	color: #0000FF;
