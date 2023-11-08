@@ -1,0 +1,32 @@
+body {
+  background-color: rgb(230,230,250);
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+#turn {
+  background-color: gold;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
+table {
+  width:303px;
+  border:0px none black;
+  margin: auto;
+}
+
+th, td {
+  border:1px solid black;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+}

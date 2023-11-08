@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" type="text/css" href="sty.css">
+</head>
+
+<body>
+
+<h2>A TIC TAC TOE GAME</h2>
+
+<table style="width:300px">
+  <tr>
+    <td class="cell" id="d1" onclick="play(this.id)">&nbsp;</td>
+    <td class="cell" id="d2" onclick="play(this.id)">&nbsp;</td>
+    <td class="cell" id="d3" onclick="play(this.id)">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="cell" id="d4" onclick="play(this.id)">&nbsp;</td>
+    <td class="cell" id="d5" onclick="play(this.id)">&nbsp;</td>
+    <td class="cell" id="d6" onclick="play(this.id)">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="cell" id="d7" onclick="play(this.id)">&nbsp;</td>
+    <td class="cell" id="d8" onclick="play(this.id)">&nbsp;</td>
+    <td class="cell" id="d9" onclick="play(this.id)">&nbsp;</td>
+  </tr>
+</table>
+
+<h3 id="info">Player Turn : <span id="turn">&nbsp;X&nbsp;</span></h3>
+
+<audio id="winsound">
+  <source src="crowd-cheers.mp3" type="audio/mpeg">
+</audio>
+
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
+
